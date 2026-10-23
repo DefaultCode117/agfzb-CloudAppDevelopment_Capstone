@@ -1,36 +1,52 @@
-# Final Project Template
+# Cars Dealership - Full-Stack Development Capstone
 
-The final project for this course has several steps that you must complete. 
-To give you an overview of the whole project, all the high-level steps are listed below. 
-The project is then divided into several smaller labs that give the detailed instructions for each step. 
-You must complete all the labs to successfully complete the project.
+A full-stack dealership web application developed for the IBM Full-Stack Software Developer Capstone Project.
 
-## Project Breakdown
+## Project Overview
 
-**Prework: Sign up for IBM Cloud account and create a Watson Natural language Understanding service**
-1. Create an IBM cloud account if you don't have one already.
-2. Create an instance of the Natural Language Understanding (NLU) service.
+Cars Dealership is a web application designed for a US-based car retailer. The intended application allows visitors to browse dealerships, filter dealerships by state, view dealer details and customer reviews, create accounts, sign in, and post reviews.
 
-**Fork the project Github repository with a project then build and deploy the template project**
-1. Fork the repository in your account
-2. Clone the repository in the theia lab environment
-3. Create static pages to finish the user stories
-4. Deploy the application on IBM Cloud
+## Technology Stack
 
-**Add user management to the application**
-1. Implement user management using the Django user authentication system.
-2. Set up continuous integration and delivery
+- **Backend:** Python, Django, Django REST Framework
+- **Frontend:** HTML, CSS, JavaScript, React (to be integrated)
+- **Services and data:** Node.js/Express, Cloudant or MongoDB-based dealer/review services, SQLite for Django models
+- **Sentiment analysis:** IBM Watson Natural Language Understanding
+- **DevOps:** GitHub Actions, Docker, Kubernetes, IBM Cloud deployment
 
-**Implement backend services**
-1. Create cloud functions to manage dealers and reviews
-2. Create Django models and views to manage car model and car make
-3. Create Django proxy services and views to integrate dealers, reviews, and cars together
- 
-**Add dynamic pages with Django templates**
-1. Create a page that shows all the dealers
-2. Create a page that show reviews for a selected dealer
-3. Create a page that let's the end user add a review for a selected dealer
+> **Project status:** Work in progress. Some features, integrations and deployment artifacts listed above are planned and not yet implemented or verified.
 
-**Containerize your application**
-1. Add deployment artifacts to your application
-2. Deploy your application
+## Planned Features
+
+1. Responsive Home, About Us, and Contact Us pages.
+2. Registration, login, logout, and Django administration.
+3. Dealer listing, detail pages, and state filtering.
+4. Reviews, review submission, and sentiment analysis.
+5. Car makes and models API endpoints.
+6. CI/CD checks and cloud deployment.
+
+## Repository Structure
+
+- `server/`: Django project and application.
+- `functions/`: Backend service templates and setup.
+- `cloudant/`: Dealership data resources.
+- `.github/workflows/`: GitHub Actions workflow files.
+
+## Getting Started
+
+Clone this repository:
+
+```bash
+git clone https://github.com/DefaultCode117/agfzb-CloudAppDevelopment_Capstone.git
+cd agfzb-CloudAppDevelopment_Capstone
+```
+
+Inspect `server/requirements.txt` and configure the required services and environment variables before starting Django. Never commit credentials or secrets.
+
+## Author
+
+Jhon Sebastian Tribaldos Torres
+
+## Credits
+
+Adapted from the IBM Developer Skills Network Full-Stack Development Capstone starter repository. The project is developed as an educational exercise.
