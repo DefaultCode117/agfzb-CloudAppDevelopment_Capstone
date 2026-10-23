@@ -52,3 +52,13 @@ def get_dealerships(request):
 # def add_review(request, dealer_id):
 # ...
 
+
+
+def about(request):
+    """Display the About Us page."""
+    return render(request, 'About.html')
+
+
+def contact(request):
+    """Display the Contact Us page."""
+    return render(request, 'Contact.html')
